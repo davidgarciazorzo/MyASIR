@@ -6,9 +6,9 @@ for archivo in "$carpeta"/*.txz
 do
 echo "Descomprimiendo $archivo ..."
 tar Jxvf "$archivo" -C /mnt/rootfs
-chmod +x /mnt/rottfs/install/doinst.sh
+chmod +x /mnt/rootfs/install/doinst.sh
 cd /mnt/rootfs
-./intall/doinst.sh
+./install/doinst.sh
 
 cd -
 
